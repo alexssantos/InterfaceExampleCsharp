@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExample.ServiceNoInterface
 {
-    class BrazilTaxService
+    class BrazilTaxService : ITexService
     {
         public double Tax(double amount)
         {

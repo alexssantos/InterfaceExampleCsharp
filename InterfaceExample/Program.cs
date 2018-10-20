@@ -30,7 +30,7 @@ namespace InterfaceExample
                                                new Vehicle(model));
 
             //Calculate RENTAL - by DAY or HOUR
-            RentalService rentalService = new RentalService(hour, day);
+            RentalService rentalService = new RentalService(hour, day, new BrazilTaxService());
             rentalService.ProcessInvoice(carRental);
 
             Console.WriteLine("INVOICE: ");
